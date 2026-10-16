@@ -70,3 +70,7 @@ The card is trim-size, with an inset border and no bleed or crop marks. Ask a pr
 - Confirm the final destination has valid HTTPS and no login requirement. Keep the domain active after printing. Updating social links does not require reprinting if the landing URL remains the same.
 
 Automated decoding cannot replace physical mobile-reader checks. No real-device scannability claim is made until these checks are completed.
+
+## Confirmed production destination
+
+`config/production.json` records the owner-confirmed public landing URL, `https://pure-services-pi.vercel.app/`. The studio uses it when `VITE_PUBLIC_URL` is unset or blank, so production builds do not require a dashboard variable. A nonempty `VITE_PUBLIC_URL` overrides it and must pass destination validation. Update the config if changing the permanent domain; never replace it with a temporary preview URL. Redeploy after changing either setting.

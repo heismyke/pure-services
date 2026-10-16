@@ -5,7 +5,7 @@ import { SOCIAL, productionUrl, loadLogo, cardSvg, exportCard } from './qr'
 import production from '../config/production.json'
 const studio = location.pathname.replace(/\/$/, '') === '/studio'
 const logoPath = import.meta.env.VITE_LOGO_URL || '/brand/pure-lotus.png'
-const url = productionUrl(import.meta.env.VITE_PUBLIC_URL?.trim() || production.publicUrl)
+const url = productionUrl(import.meta.env.VITE_PUBLIC_URL?.trim()) || productionUrl(production.publicUrl)
 const logo = ref(''), svg = ref(''), loading = ref(true), error = ref(''), busy = ref(''), copied = ref(false), confirmed = ref(false)
 onMounted(async () => {
   try { logo.value = await loadLogo(logoPath); if (url) svg.value = cardSvg(url, logo.value) }

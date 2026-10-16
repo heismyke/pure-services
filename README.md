@@ -6,7 +6,7 @@ A small Vue 3 / Vite / Tailwind application with a customer landing page at `/` 
 
 ## Current handoff status
 
-The original PURE lotus and event flyer were not present in the supplied workspace. No replacement logo has been invented. The landing page displays the PURE wordmark until the original logo is provided. The studio blocks QR generation/export when the logo or production URL is missing. The ivory/forest/serif styling follows the written brief; matching the flyer requires the original reference.
+The original PURE logo is included unchanged at `public/brand/pure-lotus.png`, preserving its proportions and signature. A forest backing gives its ivory artwork contrast. The event flyer remains unavailable; matching that reference requires the original flyer. The studio blocks QR generation/export when the logo or production URL is missing.
 
 Dependencies are installed, and `npm run build` and `npm test` pass. Browser, downloaded-file and real-device checks have not been completed. Social links match those provided; earlier live requests were blocked by DNS. No site has been deployed and no final production QR has been generated.
 

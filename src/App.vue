@@ -26,7 +26,7 @@ async function copy() {
   <div v-if="!studio" class="landing">
     <header class="site-header"><a class="small-wordmark" href="/" aria-label="PURE home">PURE</a><span class="header-note">A MOMENT TO CONNECT</span></header>
     <main class="connect">
-      <div class="brand-emblem" v-if="logo"><img :src="logo" alt="PURE lotus" width="112" height="90"></div>
+      <div class="brand-emblem" v-if="logo"><img :src="logo" alt="PURE lotus" width="112" height="130"></div>
       <span class="eyebrow">WELCOME TO</span>
       <h1>PURE</h1>
       <div class="fine-rule"></div>

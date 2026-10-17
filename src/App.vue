@@ -26,7 +26,7 @@ async function copy() {
 <template>
   <div v-if="!studio" class="landing">
     <main class="connect">
-      <div class="brand-emblem" v-if="logo"><img :src="logo" alt="PURE lotus" width="112" height="130"></div>
+      <div class="brand-emblem" v-if="logo"><img :src="logo" alt="PURE lotus" width="140" height="140"></div>
       <div class="fine-rule"></div>
       <h1 class="connect-heading">Connect with us.</h1>
       <p class="intro">A little closer, wherever you are.</p>

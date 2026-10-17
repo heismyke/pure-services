@@ -28,10 +28,8 @@ async function copy() {
     <header class="site-header"><a class="nav-brand" href="/" aria-label="PURE home"><img :src="logo || logoPath" alt="PURE" width="62" height="72"></a><span class="header-note">A MOMENT TO CONNECT</span></header>
     <main class="connect">
       <div class="brand-emblem" v-if="logo"><img :src="logo" alt="PURE lotus" width="112" height="130"></div>
-      <span class="eyebrow">WELCOME TO</span>
-      <h1>PURE</h1>
       <div class="fine-rule"></div>
-      <h2>Connect with us.</h2>
+      <h1 class="connect-heading">Connect with us.</h1>
       <p class="intro">A little closer, wherever you are.</p>
       <nav class="social-links" aria-label="Connect with PURE">
         <a :href="SOCIAL.instagram" target="_blank" rel="noopener noreferrer" class="social-link"><span class="icon-box"><Instagram :size="23" :stroke-width="1.5" /></span><span><small>OUR EVERYDAY</small><strong>Follow us on Instagram</strong></span><ArrowUpRight class="link-arrow" :size="21" :stroke-width="1.4" /></a>

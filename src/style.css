@@ -11,3 +11,5 @@
 .brand-emblem img{border-radius:18px}.site-header{justify-content:flex-end}
 
 .brand-emblem img{width:140px;height:140px;max-width:140px;padding:12px;border-radius:50%;object-fit:contain}
+
+.empty-card>img{width:92px;height:92px;padding:10px;border-radius:50%;object-fit:contain}

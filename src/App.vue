@@ -52,7 +52,7 @@ async function copy() {
         <p v-if="loading" role="status">Preparing your card…</p><p v-if="error" role="alert" class="notice">{{ error }}</p>
         <p class="studio-footnote">Print at 100% scale. Test a printed proof with iPhone Camera and an Android QR reader before ordering a batch.</p>
       </section>
-      <section class="preview-area" aria-label="Printable card preview"><div v-if="svg" class="print-preview" v-html="svg"></div><div v-else class="empty-card"><img v-if="logo" :src="logo" alt="PURE lotus"><span class="preview-wordmark">PURE</span><div class="qr-placeholder"><span>YOUR QR<br>GOES HERE</span></div><strong>SCAN TO CONNECT</strong><p>Instagram · WhatsApp</p><span class="draft-label">PREVIEW · SETUP REQUIRED</span></div><p class="preview-caption">THE CONNECTION CARD <span>100 × 140 MM</span></p><a href="/" target="_blank" rel="noopener" class="text-link">Preview the landing page <ArrowUpRight :size="16"/></a></section>
+      <section class="preview-area" aria-label="Printable card preview"><div v-if="svg" class="print-preview" v-html="svg"></div><div v-else class="empty-card"><img v-if="logo" :src="logo" alt="PURE lotus"><span v-if="!logo" class="preview-wordmark">PURE</span><div class="qr-placeholder"><span>YOUR QR<br>GOES HERE</span></div><strong>SCAN TO CONNECT</strong><p>Instagram · WhatsApp</p><span class="draft-label">PREVIEW · SETUP REQUIRED</span></div><p class="preview-caption">THE CONNECTION CARD <span>100 × 140 MM</span></p><a href="/" target="_blank" rel="noopener" class="text-link">Preview the landing page <ArrowUpRight :size="16"/></a></section>
     </main>
   </div>
 </template>

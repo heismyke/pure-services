@@ -74,3 +74,7 @@ Automated decoding cannot replace physical mobile-reader checks. No real-device 
 ## Confirmed production destination
 
 `config/production.json` records the owner-confirmed public landing URL, `https://pure-services-pi.vercel.app/`. The studio uses it when `VITE_PUBLIC_URL` is unset or blank, so production builds do not require a dashboard variable. A nonempty `VITE_PUBLIC_URL` overrides it and must pass destination validation. Update the config if changing the permanent domain; never replace it with a temporary preview URL. Redeploy after changing either setting.
+
+## Branding and search metadata
+
+The printable card uses the original logo and signature without a duplicate PURE heading. Logo-based SVG/PNG favicons, an Apple touch icon and a social sharing image are included in `public/`. The build adds canonical/Open Graph/Twitter metadata, Organization structured data, `robots.txt` and a root-only sitemap, using the validated production destination. A separate built `studio.html` carries a noindex directive and is served at `/studio` by both hosting configurations. Regenerate the icon/share assets if the original logo changes.

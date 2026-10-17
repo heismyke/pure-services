@@ -25,7 +25,7 @@ async function copy() {
 
 <template>
   <div v-if="!studio" class="landing">
-    <header class="site-header"><a class="nav-brand" href="/" aria-label="PURE home"><img :src="logo || logoPath" alt="PURE" width="62" height="72"></a><span class="header-note">A MOMENT TO CONNECT</span></header>
+    <header class="site-header"><span class="header-note">A MOMENT TO CONNECT</span></header>
     <main class="connect">
       <div class="brand-emblem" v-if="logo"><img :src="logo" alt="PURE lotus" width="112" height="130"></div>
       <div class="fine-rule"></div>
@@ -41,7 +41,7 @@ async function copy() {
   </div>
 
   <div v-else class="studio">
-    <header class="studio-header"><a href="/" class="nav-brand" aria-label="PURE home"><img :src="logo || logoPath" alt="PURE" width="62" height="72"></a><span>THE PRINT STUDIO</span><a href="/" class="back-link"><ArrowLeft :size="16"/> Landing page</a></header>
+    <header class="studio-header"><span>THE PRINT STUDIO</span><a href="/" class="back-link"><ArrowLeft :size="16"/> Landing page</a></header>
     <main class="studio-grid">
       <section class="studio-controls">
         <span class="eyebrow">ONE CODE. TWO CONNECTIONS.</span><h1>A beautiful<br>way to connect.</h1><p class="studio-intro">Your PURE connection card, ready for the real world.</p>
